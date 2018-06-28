@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<h1> inputs</h1>
+<div class="default__inputs">
+<label  for="button" >button </label>
+<input  id="button" type="button" value="button"/>
+<label for="checkbox" >checkbox </label>
+<input id="checkbox" type="checkbox" />
+
+<label for="colour" >colour </label>
+<input id="colour"type="color" />
+
+<label for="date" >date </label>
+<input id="date" type="date"/>
+
+<label for="radio" >radio </label>
+<input id="radio" type="radio"/>
+
+<label for="range" >range </label>
+<input id="range" type="range"/>
+
+
+<label for="month" >month </label>
+<input id="month" type="month"/>
+
+<label for="image" >image </label>
+<input id="image" type="image"/>
+
+
+<label for="d-file" >file </label>
+<input id="d-file" type="file"/>
+
+<label for="text" >text </label>
+<input id="text" type="text"/>
+</div>
+<div class="keyboard__container">
+    <style>
+        kbd {
+            background-color: #f5f5f5 !important;
+            border-style: solid;
+            border-width: 1px 2px 2px 1px;
+            padding: 0 1px;
+            color:black;
+        }
+    </style>
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>F5</kbd> to re-render.</p>
+</div>
+<div>
+    <h2>button Inputs</h2>
+    <p><button>Default button</button></p>
+
+    <p><button disabled>Disabled button</button></p>
+
+    <p>
+        <button name="submit" type="submit" value="submit-true">
+            Form submit button
+        </button>
+    </p>
+
+    <p><button accesskey="a">Button with <u>A</u>ccesskey</button></p>
+
+    <p><button class="styled">Fancy styled button</button></p>
+
+</div>
+<div class="textarea__container">
+    <div class="textarea-example">
+        <div>
+            <label for="basic">Basic example:</label>
+            <textarea id="basic" name="basic">
+        </textarea>
+        </div>
+        <div>
+            <label for="advanced">Advanced example:</label>
+            <textarea id="advanced" name="advanced"
+                      rows="3" cols="33" maxlength="200"
+                      wrap="hard">
+Textarea with sizing and wrap attribute (try values of hard, soft, and off to see how it affects wrapping). The maximum number of characters is constrained to 200 by the maxlength attribute.
+        </textarea>
+        </div>
+    </div>
+</div>
+<div class="progress__container">
+    <div class="progress-example">
+        <div>
+            <label for="file">File progress</label>
+            <progress id="file" name="file" max="100" value="70">
+                70%
+            </progress>
+        </div>
+        <div>
+            <label for="total">Total progress</label>
+            <progress id="total" name="total" max="14" value="2">
+                2 of 14
+            </progress>
+        </div>
+    </div>
+</div>
+<div class="meter__container">
+    <div class="meter-example">
+        <div>
+            <label for="fuel">Fuel level (high value is good)</label>
+            <meter id="fuel" name="fuel" min="0" max="100"
+                   low="33" high="66" optimum="80" value="50">
+                at 50/100
+            </meter>
+        </div>
+        <div>
+            <label for="pressure">Pressure (low value is good)</label>
+            <meter id="pressure" name="pressure" min="0" max="100"
+                   low="25" high="75" optimum="20" value="50">
+                is OK
+            </meter>
+        </div>
+    </div>
+
+</div>
+<div class="legend__container">
+    <fieldset>
+        <legend>Choose your favorite monster</legend>
+
+        <input type="radio" id="kraken" name="monster">
+        <label for="kraken">Kraken</label><br/>
+
+        <input type="radio" id="sasquatch" name="monster">
+        <label for="sasquatch">Sasquatch</label><br/>
+
+        <input type="radio" id="mothman" name="monster">
+        <label for="mothman">Mothman</label>
+    </fieldset>
+</div>
+<div class="datalist__container">
+    <h2>datalist</h2>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+
+    <footer>Photo by ian dooley<br/> on Unsplash</footer>
+</div>
+<div class="cards__container">
+    <h2>cards</h2>
+    <div class="simple__card card">
+        <div class="card-body">
+            <p>some text</p>
+        </div>
+        <div class="card-img">
+            <span>image to go here</span>
+        </div>
+        <div class="card-footer">
+            <span>card footer</span>
+        </div>
+    </div>
+    <!--card end-->
+    <div class="simple__card card">
+        <div class="card-header">
+            <span>card header</span>
+        </div>
+        <div class="card-body">
+            <p>some text</p>
+        </div>
+        <div class="card-img">
+            <span>image to go here</span>
+        </div>
+        <div class="card-footer">
+            <span>card footer</span>
+        </div>
+    </div>
+</div>
+<fieldset>
+    <legend>Login details:</legend>
+
+    <div class="username">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" required
+               minLength="4" maxLength="8"
+               placeholder="4 to 8 characters long" />
+        <span class="validity"></span>
+    </div>
+
+</fieldset>
+</body>
+</html>
