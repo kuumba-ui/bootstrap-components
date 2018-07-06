@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-components",
+  "version": "1.0.0",
+  "description": "html elements with custom bootstrap styling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuumba-ui/bootstrap-components.git"
+  },
+  "keywords": [
+    "UI"
+  ],
+  "author": "Ash H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuumba-ui/bootstrap-components/issues"
+  },
+  "homepage": "https://github.com/kuumba-ui/bootstrap-components#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
